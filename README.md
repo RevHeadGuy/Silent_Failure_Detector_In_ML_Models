@@ -32,6 +32,7 @@ Silent failures
 Model degradation without explicit runtime errors
 
 silent_failure_detector/
+
 ├── main.py                          # Entry point
 
 ├── src/
