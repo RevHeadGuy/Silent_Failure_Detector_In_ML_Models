@@ -1,4 +1,4 @@
-Silent Failure Detector for ML Models
+# Silent Failure Detector for ML Models
 
 A modular system to detect silent failures in machine learning models by monitoring prediction drift (and optionally feature drift) between a historical baseline period and new monitoring data.
 
