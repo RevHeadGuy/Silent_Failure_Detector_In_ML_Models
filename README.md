@@ -31,28 +31,46 @@ Changes in input feature distributions
 Silent failures
 Model degradation without explicit runtime errors
 
-🧱 Project Architecture
 silent_failure_detector/
 ├── main.py                          # Entry point
+
 ├── src/
+
 │   ├── config.py                    # Configuration constants
+
 │   └── load_data.py                 # Data loading utilities
+
 ├── model/
+
 │   └── train_model.py               # Model training
+
 ├── baseline/
+
 │   └── save_baseline_predictions.py # Baseline establishment
+
 ├── monitoring/
+
 │   ├── prediction_drift.py          # Prediction drift detection
-│   ├── drift_severity.py            # Drift severity classification
-│   ├── feature_monitor.py           # Feature-level monitoring (optional)
+
+│   ├── drift_severity.py            # Severity classification
+
+│   ├── feature_monitor.py           # Feature-level monitoring
+
 │   ├── drift_metrics.py             # KL divergence & PSI
+
 │   └── severity.py                  # Feature severity classification
+
 ├── config/
+
 │   └── thresholds.py                # Drift thresholds
+
 ├── alerts/
+
 │   └── alert_engine.py              # Alert generation
+
 └── data/
-    └── machine_data.csv             # Input dataset
+
+    └── machine_data.csv             # Input data
 
 ⚙️ Step-by-Step Workflow
 Step 1: Configuration (src/config.py)
