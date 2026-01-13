@@ -19,3 +19,15 @@ The system combines statistical drift detection, severity classification, alerti
 6. Severity Classification : Automatic classification of drift severity: LOW, MEDIUM, HIGH
 
 7. Baseline Behavior Management : Captures and stores healthy baseline behavior for future comparisons
+
+# 🧠 Why Silent Failure Detection?
+
+Traditional ML systems often fail silently:
+
+1. The model keeps running
+
+2. No exceptions are thrown
+
+3. Predictions slowly become unreliable
+
+This project detects those failures early, before accuracy drops or business impact occurs.
