@@ -65,3 +65,41 @@ pyyaml>=6.0
 scipy>=1.10.0
 
 plotly>=5.15.0
+
+▶️ Usage
+
+1️⃣ Run the Monitoring Pipeline
+
+python main.py
+
+This will:
+
+Load and split the dataset into baseline (60%) and monitoring (40%)
+
+Train a logistic regression model
+
+Save baseline prediction behavior
+
+Compute prediction drift metrics
+
+Detect feature-level drift (PSI + KL)
+
+Perform shadow model comparison
+
+Save all outputs to the baseline/ directory
+
+2️⃣ Launch the Dashboard
+
+streamlit run dashboard/app.py
+
+The dashboard provides:
+
+Overall drift severity
+
+Prediction drift trends (rolling windows)
+
+Feature-level root cause analysis
+
+Shadow model disagreement analysis
+
+Alert summaries and recommendations
