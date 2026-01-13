@@ -103,3 +103,108 @@ The dashboard provides:
 4. Shadow model disagreement analysis
 
 5. Alert summaries and recommendations
+
+# 🔧 Configuration
+
+All system behavior is controlled via YAML configuration.
+
+config/config.yaml
+thresholds:
+  prediction_drift:
+    mean_shift: 0.05
+    std_shift: 0.05
+    distribution_distance: 0.1
+  psi:
+    normal: 0.1
+    low: 0.2
+    medium: 0.3
+
+alerts:
+  high: slack
+  medium: email
+  low: console
+
+monitoring:
+  enable_shadow_model: true
+  rolling_window: true
+
+
+No code changes are required to tune thresholds or alerts.
+
+# 📊 Monitoring Metrics
+
+1. Prediction Drift
+
+Mean Shift – change in average prediction confidence
+
+Std Shift – change in prediction spread
+
+Distribution Distance – behavioral shift in predictions
+
+2. Feature Drift
+
+PSI (Population Stability Index)
+
+KL Divergence
+
+PSI Range	Severity
+
+< 0.10	Normal
+
+0.10 – 0.20	Low
+
+0.20 – 0.30	Medium
+
+≥ 0.30	High
+
+# 🧪 Shadow Model Monitoring
+
+A shadow model runs in parallel with the production model.
+
+1. Measures prediction disagreement
+
+2. Detects concept drift without labels
+
+3. Enables safe model comparison before deployment
+
+# 🚨 Alert System
+
+Alerts are routed based on severity:
+
+LOW → Console logs
+
+MEDIUM → Email (stub)
+
+HIGH → Slack (stub)
+
+Alert routing is implemented in alerts/alert_router.py.
+
+# 📦 Output Artifacts
+
+All outputs are saved under baseline/:
+
+prediction_drift_metrics.csv
+
+feature_drift_metrics.csv
+
+shadow_model_predictions.csv
+
+These are consumed by the dashboard and alerting system.
+
+# 🔄 Extending the System
+
+Add New Drift Metrics
+
+Implement metric in monitoring/drift_metrics.py
+
+Integrate in monitoring pipeline
+
+Visualize via dashboard/charts.py
+
+Add Custom Alert Channels
+
+Extend alerts/alert_router.py with integrations (Slack, Email, PagerDuty).
+
+Swap Models
+
+Replace the model in model/train_model.py while preserving the interface.
