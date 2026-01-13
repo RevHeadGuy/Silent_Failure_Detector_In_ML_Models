@@ -1,0 +1,47 @@
+/* Body background */
+body {
+    background-color: #f8f9fa;
+    font-family: "Arial", sans-serif;
+}
+
+/* Metric cards */
+.metric-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Colors based on severity */
+.metric-healthy {
+    background-color: #d4edda;  /* green */
+    color: #155724;
+}
+
+.metric-warning {
+    background-color: #fff3cd;  /* yellow */
+    color: #856404;
+}
+
+.metric-critical {
+    background-color: #f8d7da;  /* pink/red */
+    color: #721c24;
+}
+/* Charts container */
+.chart-container {
+    padding: 20px;
+    margin: 15px 0;
+}
+
+/* Tables */
+.dataframe {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Titles and headers */
+h1, h2, h3 {
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+}
