@@ -32,7 +32,7 @@ Traditional ML systems often fail silently:
 
 This project detects those failures early, before accuracy drops or business impact occurs.
 
-⚙️ Installation
+# ⚙️ Installation
 
 Prerequisites
 
@@ -47,3 +47,21 @@ git clone <repository-url>
 cd silent_failure_detector
 
 pip install -r requirements.txt
+
+requirements.txt
+
+pandas>=1.5.0
+
+numpy>=1.23.0
+
+scikit-learn>=1.2.0
+
+streamlit>=1.25.0
+
+joblib>=1.2.0
+
+pyyaml>=6.0
+
+scipy>=1.10.0
+
+plotly>=5.15.0
