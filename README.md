@@ -74,19 +74,19 @@ python main.py
 
 This will:
 
-Load and split the dataset into baseline (60%) and monitoring (40%)
+1. Load and split the dataset into baseline (60%) and monitoring (40%)
 
-Train a logistic regression model
+2. Train a logistic regression model
 
-Save baseline prediction behavior
+3. Save baseline prediction behavior
 
-Compute prediction drift metrics
+4. Compute prediction drift metrics
 
-Detect feature-level drift (PSI + KL)
+5. Detect feature-level drift (PSI + KL)
 
-Perform shadow model comparison
+6. Perform shadow model comparison
 
-Save all outputs to the baseline/ directory
+7. Save all outputs to the baseline/ directory
 
 2️⃣ Launch the Dashboard
 
@@ -94,12 +94,12 @@ streamlit run dashboard/app.py
 
 The dashboard provides:
 
-Overall drift severity
+1. Overall drift severity
 
-Prediction drift trends (rolling windows)
+2. Prediction drift trends (rolling windows)
 
-Feature-level root cause analysis
+3. Feature-level root cause analysis
 
-Shadow model disagreement analysis
+4. Shadow model disagreement analysis
 
-Alert summaries and recommendations
+5. Alert summaries and recommendations
