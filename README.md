@@ -110,40 +110,6 @@ All system behavior is controlled via YAML configuration.
 
 config/config.yaml
 
-thresholds:
-
-  prediction_drift:
-  
-    mean_shift: 0.05
-    
-    std_shift: 0.05
-    
-    distribution_distance: 0.1
-  
-  psi:
-  
-    normal: 0.1
-    
-    low: 0.2
-    
-    medium: 0.3
-
-
-alerts:
-
-  high: slack
-  
-  medium: email
-  
-  low: console
-
-monitoring:
-  
-  enable_shadow_model: true
-  
-  rolling_window: true
-
-
 No code changes are required to tune thresholds or alerts.
 
 # 📊 Monitoring Metrics
