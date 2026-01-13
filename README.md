@@ -6,27 +6,27 @@ The system combines statistical drift detection, severity classification, alerti
 
 # 🚀 Key Capabilities
 
-Prediction Drift Detection
+1. Prediction Drift Detection
 
-Detects changes in model prediction behavior using distribution-based metrics
+2. Detects changes in model prediction behavior using distribution-based metrics
 
-Feature-Level Drift Monitoring
+3. Feature-Level Drift Monitoring
 
-Tracks individual feature drift using PSI (Population Stability Index) and KL Divergence
+4. Tracks individual feature drift using PSI (Population Stability Index) and KL Divergence
 
-Shadow Model Comparison
+5. Shadow Model Comparison
 
-Compares production model predictions with a shadow model to approximate concept drift
+6. Compares production model predictions with a shadow model to approximate concept drift
 
-Interactive Monitoring Dashboard
+7. Interactive Monitoring Dashboard
 
-Streamlit dashboard with rolling window analysis and visualizations
+8. Streamlit dashboard with rolling window analysis and visualizations
 
-Alert Routing System
+9. Alert Routing System
 
-Configurable alerting based on drift severity (console, email, Slack)
+10. Configurable alerting based on drift severity (console, email, Slack)
 
-Severity Classification
+11. Severity Classification
 
 Automatic classification of drift severity: LOW, MEDIUM, HIGH
 
