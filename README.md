@@ -66,7 +66,7 @@ scipy>=1.10.0
 
 plotly>=5.15.0
 
-▶️ Usage
+# ▶️ Usage
 
 1️⃣ Run the Monitoring Pipeline
 
