@@ -31,3 +31,44 @@ Traditional ML systems often fail silently:
 3. Predictions slowly become unreliable
 
 This project detects those failures early, before accuracy drops or business impact occurs.
+
+# 📁 Project Structure
+
+silent_failure_detector/
+├── alerts/                 # Alert generation and routing
+│   ├── alert_engine.py
+│   └── alert_router.py
+├── baseline/               # Stored baseline and monitoring outputs
+│   ├── feature_drift_metrics.csv
+│   ├── prediction_drift_metrics.csv
+│   ├── shadow_model_predictions.csv
+│   └── save_baseline_predictions.py
+├── config/                 # Configuration management
+│   ├── config.yaml
+│   ├── config_loader.py
+│   └── thresholds.py
+├── dashboard/              # Streamlit dashboard
+│   ├── app.py
+│   ├── charts.py
+│   ├── layout.py
+│   └── styles.css
+├── data/                   # Input dataset
+│   └── machine_data.csv
+├── model/                  # Model training
+│   └── train_model.py
+├── monitoring/             # Drift detection logic
+│   ├── concept_drift.py
+│   ├── drift_metrics.py
+│   ├── drift_severity.py
+│   ├── drift_trend.py
+│   ├── feature_monitor.py
+│   ├── prediction_drift.py
+│   ├── retraining_trigger.py
+│   ├── rolling_window.py
+│   ├── root_cause.py
+│   ├── severity.py
+│   └── shadow_model.py
+├── src/
+│   ├── config.py
+│   └── load_data.py
+└── main.py                 # Pipeline entry point
